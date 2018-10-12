@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">点货单</string>
+    <string name="title_home">货架</string>
+    <string name="title_dashboard">清单</string>
+    <string name="title_notifications">设置</string>
+    <string name="toolbar_item">清单</string>
+</resources>

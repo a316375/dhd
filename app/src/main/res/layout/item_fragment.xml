@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableRow
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bgitem2"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="2.0\n元"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="false">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="7"
+                    app:cardBackgroundColor="#fa1"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:text="名称"
+                            android:textColor="#111"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/card1"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            app:cardBackgroundColor="#af1"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="5dp"
+                            app:cardUseCompatPadding="true">
+
+                            <TextView
+                                android:id="@+id/bt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="移除"
+                                android:textColor="#d3d"
+                                android:textStyle="bold" />
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    app:cardBackgroundColor="#fa1"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="添加清单"
+                        android:textColor="#13d"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+            </TableRow>
+        </android.support.v7.widget.CardView>
+    </TableRow>
+</RelativeLayout>
